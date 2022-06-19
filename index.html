@@ -1,0 +1,92 @@
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="vewport content=width=device-width">
+<title>count</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="all1">
+<header>
+    <h1>Ta or menter用 timer</h1>
+</header>
+
+    <div class="container">
+<p id="timer">0分0秒</p>
+
+
+
+    </div>
+<div class="conti">
+    <input type="button" value="start" id="yhoo" onclick="GetRandomNumber()">
+    
+    <input type="button" value="stop" class="yahoo" id="yahoo" onclick="stop()">
+
+    <input type="button" value="リセット" class="yaoo" id="yaoo" onclick="yaoo()">
+
+    <input type="number" min="1" min="600" value="" class ="ygo" id="yio">
+
+<p class="sad">↑↑ここに何秒にするか入力してください↑↑<br>分単位の入力には対応してません。<br>例）3分の場合180秒と入力してください</p>
+</div>
+
+</div>
+<footer>
+    <p class="sads">※1度停止してしまうと再開できません</p>
+</footer>
+<script>
+
+const music = new Audio("/Users/hu-tao/Downloads/アナログ時計アラーム音.mp3");
+var god1;
+var yes;
+function GetRandomNumber() {
+
+var tee=document.getElementById("yio");
+var tee2=tee.value;
+god1 =tee2;
+if(god1<0){
+    
+}
+yes=setInterval(timers,1000);
+const inpu=document.getElementById("yhoo");
+function timers(){    
+    if(god1<1){
+    clearInterval(yes);
+    var ans=document.getElementById("timer");
+    ans.style.color="red";
+    ans.style.backgroundColor="white";
+    ans.innerHTML="Time up!"
+    music.play();
+    }else{
+    god1--;
+    var god2=Math.floor(god1/60);
+    var god3=god1%60;
+    var god4=god2+"分"+god3+"秒";
+    document.getElementById("timer").innerHTML=god4;
+    const inpu=document.getElementById("yhoo");
+    }
+    if(god1>0){
+        const input=document.getElementById("yhoo");
+    input.disabled=true;
+    }
+    }
+}
+
+function stop(){
+    music.pause();
+    clearInterval(yes);
+}
+function yaoo(){
+    clearInterval(yes);
+    const ins=document.getElementById("yhoo");
+    ins.disabled=false;
+    const nom=""
+    document.getElementById("timer").innerHTML=nom;
+    music.pause();
+}
+
+</script>
+</body>
+</html>
