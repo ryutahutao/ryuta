@@ -1,0 +1,83 @@
+
+
+
+header{
+    text-align: center;
+    color: rgb(82, 84, 84);
+    margin: auto;
+    font-size: 10px;
+}
+
+
+
+#yhoo{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border-color: rgb(193, 188, 188);
+    border: 2px rgba(0, 0, 0, 0) solid;
+    font-size: 20px;
+    margin: 20px;
+    
+}
+
+.yahoo{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgb(235, 75, 57);
+    border: 2px rgba(247, 0, 0, 0.79) solid;
+    font-size: 20px;
+    margin: 20px;
+    color:white;
+    
+}
+.yaoo{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgb(238, 233, 232);
+    border: 2px rgba(46, 45, 45, 0.79) solid;
+    font-size: 20px;
+    margin: 20px;
+    color:rgb(60, 57, 57);
+}
+.ygo{
+width: 620px;
+height: 100px;
+font-size: 60px;
+padding: 20px;
+margin-top: 40px;
+float: right;
+}
+.conti{
+    max-width: 600px;
+    margin: auto;
+    
+}
+
+
+#timer{
+background-color: white;
+padding: 20px;
+margin: 30px auto;
+color: black;
+font-size: 200px;
+border-radius: 3px;
+text-align: center;
+
+}
+
+footer{
+    height: 50px;
+}
+
+.sad{
+    margin: auto;
+    text-align: center;
+}
+
+.sads{
+    text-align: center;
+    
+}
