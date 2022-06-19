@@ -34,7 +34,7 @@
 
 </div>
 <footer>
-    <p class="sads">※1度停止してしまうと再開できません</p>
+    <p class="sads">※1度停止してしまうと再開できません（めんどくさかったからなんて口が裂けても言えないw）</p>
 </footer>
 <script>
 
@@ -55,8 +55,8 @@ function timers(){
     if(god1<1){
     clearInterval(yes);
     var ans=document.getElementById("timer");
-  
-    ans.style.backgroundColor="white";
+
+    ans.style.color="red";
     ans.innerHTML="Time up!"
     music.play();
     }else{
@@ -66,6 +66,10 @@ function timers(){
     var god4=god2+"分"+god3+"秒";
     document.getElementById("timer").innerHTML=god4;
     const inpu=document.getElementById("yhoo");
+    var ans=document.getElementById("timer");
+    ans.style.color="black";
+
+    
     }
     if(god1>0){
         const input=document.getElementById("yhoo");
@@ -77,6 +81,9 @@ function timers(){
 function stop(){
     music.pause();
     clearInterval(yes);
+    var gon=document.getElementById("yahoo");
+    const input=document.getElementById("yhoo");
+    input.disabled=false;
 }
 function yaoo(){
     clearInterval(yes);
@@ -85,6 +92,8 @@ function yaoo(){
     const nom=""
     document.getElementById("timer").innerHTML=nom;
     music.pause();
+    
+    document.getElementById("timer").innerHTML="<p style='color:black;margin:0;font-size:200px;'>choose</p>"
 }
 
 </script>
