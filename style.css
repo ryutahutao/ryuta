@@ -14,7 +14,7 @@ header{
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border-color: rgb(193, 188, 188);
+    border-color: rgb(19, 18, 18);
     border: 2px rgba(0, 0, 0, 0) solid;
     font-size: 20px;
     margin: 20px;
@@ -36,11 +36,11 @@ header{
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background-color: rgb(238, 233, 232);
+    background-color: rgb(98, 192, 247);
     border: 2px rgba(46, 45, 45, 0.79) solid;
     font-size: 20px;
     margin: 20px;
-    color:rgb(60, 57, 57);
+    color:rgb(0, 0, 0);
 }
 .ygo{
 width: 620px;
